@@ -1,0 +1,61 @@
+version: 2
+updates:
+- package-ecosystem: cargo
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "22:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: cargo-bpf
+    versions:
+    - ">= 0"
+  - dependency-name: redbpf
+    versions:
+    - ">= 0"
+  - dependency-name: redbpf-macros
+    versions:
+    - ">= 0"
+  - dependency-name: redbpf-probes
+    versions:
+    - ">= 0"
+  - dependency-name: regex
+    versions:
+    - 1.4.3
+    - 1.4.4
+    - 1.4.5
+  - dependency-name: serde_json
+    versions:
+    - 1.0.61
+    - 1.0.62
+    - 1.0.63
+  - dependency-name: cadence
+    versions:
+    - 0.23.0
+    - 0.24.0
+  - dependency-name: capnp
+    versions:
+    - 0.14.0
+- package-ecosystem: cargo
+  directory: "/ingraind-probes"
+  schedule:
+    interval: daily
+    time: "22:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: cargo-bpf
+    versions:
+    - ">= 0"
+  - dependency-name: redbpf
+    versions:
+    - ">= 0"
+  - dependency-name: redbpf-macros
+    versions:
+    - ">= 0"
+  - dependency-name: redbpf-probes
+    versions:
+    - ">= 0"
+  - dependency-name: memoffset
+    versions:
+    - 0.6.1
+    - 0.6.2
