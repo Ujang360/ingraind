@@ -36,7 +36,7 @@ toml = "^0.5"
 
 rustls = "0.18"
 metrohash = "1"
-regex = "1.3"
+regex = "1.5"
 
 log = { version = "^0.4", features = ["serde"] }
 env_logger = "^0.7.1"
@@ -56,7 +56,7 @@ chrono = "0.4"
 ingraind-probes = { path = "ingraind-probes" }
 
 [dependencies.hyper]
-version = "0.13"
+version = "0.14"
 optional = true
 
 [dependencies.hyper-rustls]
@@ -68,7 +68,7 @@ version =  "0.21"
 optional = true
 
 [dependencies.capnp]
-version = "0.13"
+version = "0.24"
 optional = true
 
 [dependencies.rusoto_core]
